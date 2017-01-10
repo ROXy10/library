@@ -8,3 +8,4 @@
 db.py
 venv_*
 .DS_Store
+.env
