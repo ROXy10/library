@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from book.views import BookListView
+from book.views import BookListView, BookDetailView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', BookListView.as_view(), name='home'),
+    url(r'^(?P<slug>[\w-]+)/$', BookDetailView.as_view(), name='detail'),
 ]

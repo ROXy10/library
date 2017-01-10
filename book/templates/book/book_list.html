@@ -4,7 +4,7 @@
     {% for book in object_list %}
         {% if book.published %}
             {% autoescape off %}
-                <h3 class="col-md-12">{{ book.title }}</h3>
+                <h3 class="col-md-12"><a href='{{ book.get_absolute_url }}'>{{ book.title }}</a></h3>
                 <div class="col-md-12">{{ book.updated }}</div>
                 <div class="col-md-12">{{ book.content }}</div>
             {% endautoescape %}

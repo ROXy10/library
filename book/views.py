@@ -1,4 +1,5 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
+from django.shortcuts import get_object_or_404
 from .models import Book
 from .highlighting import Highlighter
 
@@ -19,3 +20,9 @@ class BookListView(ListView):
         return result
 
 
+class BookDetailView(DetailView):
+    model = Book
+    template_name = 'book/book_detail.html'
+
+    def get_object(self):
+        return get_object_or_404(Book, slug__iexact=self.kwargs['slug'])
