@@ -10,7 +10,7 @@ class Book(models.Model):
     """Book Model"""
 
     title = models.CharField(max_length=256, blank=False, verbose_name="Название", null=True)
-    slug = models.SlugField(unique=True, blank=False, null=True)
+    slug = models.SlugField(unique=True, null=True)
     content = models.TextField(verbose_name="Текст", blank=False, null=True)
     published = models.BooleanField(default=False, verbose_name="Опобликовано")
     updated = models.DateTimeField(auto_now=True, auto_now_add=False, verbose_name="Дата обновления", null=True)
