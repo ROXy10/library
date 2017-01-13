@@ -7,7 +7,7 @@
 `cd library`
 ##### create virtualenv
 `virtualenv --no-site-packages -p python3.5 venv_library`
-##### create virtualenv
+##### activate virtualenv
 `source venv_library/bin/activate`
 ##### install Django frameworks
 `pip install Django==1.10.5`
