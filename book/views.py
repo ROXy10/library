@@ -1,7 +1,7 @@
 from django.views.generic import ListView, DetailView
 from django.shortcuts import get_object_or_404
+
 from .models import Book
-from .highlighting import Highlighter
 
 
 class BookListView(ListView):
@@ -10,13 +10,16 @@ class BookListView(ListView):
 
     def get_queryset(self):
         result = super(BookListView, self).get_queryset()
-        query = self.request.GET.get('search')
+        query = self.request.GET.get('query')
         if query:
-            result = Book.objects.search(query)
-            highlight = Highlighter(query, html_tag='span', css_class='yellow', max_length=1000)
-            for item in result:
-                item.title = highlight.highlight(item.title)
-                item.content = highlight.highlight(item.content)
+            result = Book.objects.search(
+                query,
+                headline_field='content',
+                headline_document='title'
+            ).search(
+                query,
+                headline_field='content',
+                headline_document='content')
         return result
 
 
