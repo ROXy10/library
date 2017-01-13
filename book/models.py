@@ -9,11 +9,11 @@ from djorm_pgfulltext.fields import VectorField
 class Book(models.Model):
     """Book Model"""
 
-    title = models.CharField(max_length=256, blank=False, verbose_name="Название", null=True)
+    title = models.CharField(max_length=256, blank=False, verbose_name="Title", null=True)
     slug = models.SlugField(unique=True, blank=True)
-    content = models.TextField(verbose_name="Текст", blank=False, null=True)
-    published = models.BooleanField(default=False, verbose_name="Опобликовано")
-    updated = models.DateTimeField(auto_now=True, auto_now_add=False, verbose_name="Дата обновления", null=True)
+    content = models.TextField(verbose_name="Content", blank=False, null=True)
+    published = models.BooleanField(default=False, verbose_name="Published")
+    updated = models.DateTimeField(auto_now=True, auto_now_add=False, verbose_name="Date updated", null=True)
 
     search_index = VectorField()
 
@@ -25,8 +25,8 @@ class Book(models.Model):
     )
 
     class Meta:
-        verbose_name = "книга"
-        verbose_name_plural = "книги"
+        verbose_name = "book"
+        verbose_name_plural = "books"
         ordering = ["title"]
 
     def __unicode__(self):
