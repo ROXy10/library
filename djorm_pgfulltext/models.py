@@ -236,6 +236,8 @@ class SearchQuerySet(QuerySet):
 
     def search(self, query, rank_field=None, rank_function='ts_rank', config=None,
                rank_normalization=32, raw=False, using=None, fields=None,
+               # 25.01.2016 Vadim Kulaha add options maximum number of text excerpts or fragments to display
+               # max_fragment - type integer
                # headline_field=None, headline_document=None, ):
                headline_field=None, headline_document=None, max_fragment=None):
         '''
@@ -315,6 +317,8 @@ class SearchQuerySet(QuerySet):
 
 
             if headline_field is not None and headline_document is not None:
+                # 25.01.2016 Vadim Kulaha add options maximum number of text excerpts or fragments to display
+                # select_dict[headline_field] = "ts_headline('%s', %s, %s)" % (
                 select_dict[headline_field] = "ts_headline('%s', %s, %s, '%s')" % (
                     config,
                     headline_document,
