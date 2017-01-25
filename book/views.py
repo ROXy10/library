@@ -15,11 +15,13 @@ class BookListView(ListView):
             result = Book.objects.search(
                 query,
                 headline_field='content',
-                headline_document='title'
+                headline_document='title',
+                max_fragment=250
             ).search(
                 query,
                 headline_field='content',
-                headline_document='content')
+                headline_document='content',
+                max_fragment=250)
         return result
 
 
