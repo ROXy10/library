@@ -13,8 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf import settings
 
 from book.views import BookListView, BookDetailView
 
@@ -23,3 +24,9 @@ urlpatterns = [
     url(r'^$', BookListView.as_view(), name='home'),
     url(r'^(?P<slug>[\w-]+)/$', BookDetailView.as_view(), name='detail'),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [
+        url(r'^__debug__/', include(debug_toolbar.urls), name='debug_toolbar'),
+    ]
