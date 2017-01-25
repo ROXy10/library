@@ -1,0 +1,384 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "book",
+        "model": "book"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5f1tbdwkc2rcvmrlc2rlhq0lc61a3f8a",
+    "fields": {
+        "session_data": "NzRhZjU2ZjFlNzBkMTNmMWM3YWE0MzA2MWIxY2JhZGZiODExOTQzYzp7Il9hdXRoX3VzZXJfaGFzaCI6IjMzODdhOTg3NTE2YmM1YTgwMzU5MDg0M2QzNDNhODhiNjQwNzE2N2UiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2017-01-31T13:28:53.772Z"
+    }
+},
+{
+    "model": "book.book",
+    "pk": 3,
+    "fields": {
+        "title": "Lorem 1",
+        "slug": "lorem-1",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur tempor nulla, vitae porta nibh vestibulum sed. Quisque placerat euismod magna, tempus finibus tellus faucibus eu. Proin faucibus odio eget est dignissim tincidunt. Sed ultrices lectus pellentesque velit egestas, at porttitor sem ultrices. Etiam nec tellus id diam cursus tempor a ac risus. Fusce eu blandit erat. Etiam ullamcorper lorem et luctus congue. Fusce pharetra est vel auctor volutpat. Sed vitae consequat ligula. Proin tempor diam porta, ultricies leo nec, mattis leo. Morbi interdum enim justo, et fermentum nisi sagittis at. Duis porttitor suscipit nisi. Aliquam tincidunt non tortor nec suscipit. Vivamus a arcu dolor. Integer iaculis in leo ultricies tristique. Pellentesque sit amet odio elit.\r\n\r\nNulla facilisi. Ut malesuada arcu et maximus efficitur. In hac habitasse platea dictumst. Duis efficitur fringilla purus vitae suscipit. Integer sit amet tortor dolor. Proin diam tellus, viverra eget urna rutrum, dictum laoreet elit. Proin a sem at nisi commodo rhoncus. Nullam accumsan scelerisque elit, id vehicula felis gravida quis. Duis tincidunt sollicitudin luctus. Vivamus auctor enim ac velit vulputate dictum. Nunc in ultrices lectus, in mollis mi. Sed ut mauris urna. Suspendisse cursus semper interdum. Nullam at risus a massa porttitor fringilla at quis sem. Praesent porttitor turpis eu commodo imperdiet. Pellentesque ipsum lacus, varius ullamcorper tempus vel, porta ut mauris.\r\n\r\nIn aliquet consectetur vestibulum. Phasellus ac dui hendrerit, sollicitudin lorem aliquet, viverra diam. Cras tempus libero ipsum, nec feugiat lorem porta vitae. Proin vel libero mauris. Nullam elementum sagittis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque varius ipsum massa, vel volutpat lectus hendrerit eu. Sed vulputate mauris id augue dictum, molestie faucibus mauris gravida. Sed tincidunt sollicitudin purus, id porttitor velit dapibus vitae. Donec scelerisque, massa eget varius sagittis, diam urna porta orci, ac scelerisque tellus nulla feugiat dui. Etiam ullamcorper nisi id mi facilisis fringilla. Aliquam id tortor vitae odio rutrum interdum. Donec dolor dolor, vehicula a velit id, maximus porttitor erat. Sed eleifend odio a nisi molestie, lacinia condimentum enim interdum.",
+        "published": true,
+        "updated": "2017-01-25T09:09:28.068Z"
+    }
+},
+{
+    "model": "book.book",
+    "pk": 4,
+    "fields": {
+        "title": "Lorem 2",
+        "slug": "lorem-2",
+        "content": "Aenean imperdiet accumsan metus. Cras id velit eu nisi ullamcorper ornare. Integer et erat fringilla, sagittis enim a, interdum orci. Integer ac metus vestibulum, laoreet nibh eu, elementum velit. Fusce quis mauris a ipsum volutpat pulvinar id quis orci. Nulla vestibulum in risus sed vestibulum. Aliquam pharetra auctor lorem, ut placerat ligula tristique vel. Maecenas dictum egestas ligula a ultrices.\r\n\r\nNulla id leo urna. Mauris volutpat dolor quam, et imperdiet libero euismod at. Aenean a consectetur massa. Donec ipsum massa, placerat sed pharetra sit amet, pulvinar eu massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in lobortis libero, ac viverra ex. In hac habitasse platea dictumst. Sed eget varius nisl, sed ultrices lacus. Aenean vitae felis at erat sagittis sodales vel at nibh. Suspendisse finibus, mi in rhoncus interdum, quam velit auctor ipsum, ac euismod quam leo eget nisi. Suspendisse porta maximus ligula, a ornare odio pellentesque in. In in ipsum mauris. Vestibulum aliquam, dui sed varius sollicitudin, massa diam venenatis nunc, a facilisis dui erat consequat mi. Vivamus ac bibendum odio.\r\n\r\nNullam tristique volutpat velit, at fringilla turpis sagittis tristique. Donec non arcu augue. Nam nec efficitur nunc. Duis posuere quis eros vel luctus. Nam scelerisque augue eu sem cursus, a sagittis massa rhoncus. Morbi vestibulum velit vestibulum rutrum bibendum. Sed nec est non dolor vehicula varius. Donec varius malesuada ipsum.\r\n\r\nCras non molestie purus, quis rhoncus augue. Mauris ornare id enim eget iaculis. Donec semper lorem et nisl eleifend, nec eleifend nulla condimentum. Phasellus vehicula id libero et pulvinar. Fusce vulputate justo vel aliquam accumsan. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque vel orci justo. Donec at arcu quis nibh congue hendrerit. Nulla blandit fermentum ornare. Pellentesque semper eleifend massa sed consectetur. Nunc a molestie elit, ac aliquet diam.",
+        "published": true,
+        "updated": "2017-01-25T09:09:48.928Z"
+    }
+},
+{
+    "model": "book.book",
+    "pk": 5,
+    "fields": {
+        "title": "Lorem 3",
+        "slug": "lorem-3",
+        "content": "Donec scelerisque auctor velit ac tincidunt. Aliquam gravida, sapien id hendrerit rhoncus, est enim lacinia lectus, ac lobortis elit turpis non eros. Sed velit libero, lacinia nec ultricies sed, pharetra vulputate neque. Pellentesque lorem nisl, venenatis et mi non, finibus sollicitudin dui. Curabitur odio tellus, dictum eu suscipit ac, sagittis id nibh. Etiam gravida purus cursus, euismod dolor in, dignissim nibh. Praesent auctor neque purus, sagittis fermentum lorem luctus a.\r\n\r\nFusce nec feugiat ipsum, pretium ullamcorper enim. Nullam faucibus, orci ac imperdiet congue, dolor leo ornare leo, at commodo turpis eros non est. Fusce placerat tortor sit amet vulputate aliquam. Mauris condimentum, metus et sollicitudin condimentum, enim urna fringilla nibh, quis dictum ante justo ut risus. Praesent et sapien ante. Donec hendrerit, diam et pulvinar vestibulum, nibh nunc maximus risus, nec finibus diam est et neque. Proin id lectus et augue volutpat vestibulum mattis in lorem.\r\n\r\nMorbi auctor maximus fermentum. Nam elit sapien, auctor bibendum orci eu, bibendum congue mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In maximus dui eu quam tincidunt, id placerat arcu consectetur. Cras nec nulla lectus. In semper neque et erat auctor accumsan. Nunc rutrum orci sed erat dignissim rutrum. Sed in odio mi. Sed et mattis diam.\r\n\r\nIn hac habitasse platea dictumst. Nullam aliquet ipsum eu dolor laoreet, ut bibendum ex sollicitudin. Donec aliquet augue et finibus egestas. Nullam sollicitudin ullamcorper bibendum. Donec ac ipsum a lorem congue dignissim sit amet eu felis. Sed ut ullamcorper purus. Cras a dapibus dolor.\r\n\r\nVivamus iaculis augue sapien, id cursus nibh finibus vel. Maecenas ultricies massa ipsum, ut malesuada sapien lobortis sed. Ut vulputate facilisis vulputate. Nulla porttitor aliquam dapibus. Maecenas lacinia malesuada nisi, sit amet tincidunt libero. Maecenas porttitor leo ut dolor commodo sodales. Phasellus congue eget elit fermentum placerat. Curabitur rutrum sodales sapien, sed auctor quam convallis vel. Pellentesque lobortis tincidunt leo a semper. Pellentesque fermentum sed turpis at ultrices. Proin ipsum urna, dictum eget nulla sit amet, accumsan interdum enim. Nullam a ex sit amet felis tempus sodales.",
+        "published": true,
+        "updated": "2017-01-25T09:10:12.352Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can add book",
+        "content_type": 7,
+        "codename": "add_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can change book",
+        "content_type": 7,
+        "codename": "change_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can delete book",
+        "content_type": 7,
+        "codename": "delete_book"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$Es9BBXfSQgdd$SK5Xf93ogjtVOqwog8z+fWzV1S9HJRbuWA8NsblGPgM=",
+        "last_login": "2017-01-17T13:28:53.767Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@mail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-01-17T13:28:45.599Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-01-25T09:09:25.170Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Lorem 1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-01-25T09:09:28.155Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Lorem 1",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-01-25T09:09:42.973Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Lorem 2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2017-01-25T09:09:49.016Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Lorem 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"published\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2017-01-25T09:10:06.417Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Lorem 3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2017-01-25T09:10:12.444Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Lorem 3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"published\"]}}]"
+    }
+}
+]
